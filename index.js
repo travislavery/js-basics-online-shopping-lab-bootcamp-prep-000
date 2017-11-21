@@ -31,13 +31,13 @@ function viewCart() {
       var nextItem = `${Object.keys(cart[item])[0]} at $${cart[item][Object.keys(cart[item])[0]]}`
       statement = statement + nextItem
       if (countdown === 2 && cart.length === 2){
-        statement = statement + ' and '
+        statement = statement + ' and ';
       } else if (countdown >= 2) {
-        statement = statement + ', and '
+        statement = statement + ', and ';
       } else if (countdown === 1) {
-        statement = statement + '.'
+        statement = statement + '.';
       }
-      countdown -= 1
+      countdown -= 1;
     }
     console.log(statement)
   }
