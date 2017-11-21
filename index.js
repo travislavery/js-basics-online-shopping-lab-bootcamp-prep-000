@@ -36,8 +36,6 @@ function viewCart() {
         statement = statement + ' and '
       }else if (countdown === 1) {
         statement = statement + '.'
-      } else {
-        continue;
       }
       countdown -= 1
     }
