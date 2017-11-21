@@ -40,8 +40,8 @@ function viewCart() {
         continue;
       }
       countdown -= 1
-    console.log(statement)
     }
+    console.log(statement)
   }
   
 }
