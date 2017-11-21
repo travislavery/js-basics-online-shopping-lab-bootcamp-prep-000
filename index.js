@@ -61,6 +61,7 @@ function removeFromCart(item) {
     return cart;
   } else if (cart.hasOwnProperty(item)) {
     delete cart.item
+    return cart;
   }
 }
 
