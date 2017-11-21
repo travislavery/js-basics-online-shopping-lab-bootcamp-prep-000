@@ -27,8 +27,8 @@ function viewCart() {
   } else if (cart.length >= 2){
     var countdown = cart.length
     var statement = "In your cart, you have "
-    for(var i in cart){
-      var nextItem = `${Object.keys(i)[0]} at $${i[Object.keys(i)[0]]}`
+    for(var item in cart){
+      var nextItem = `${Object.keys(item)[0]} at $${item[Object.keys(item)[0]]}`
       statement = statement + nextItem
       if (countdown > 2) {
         statement = statement + ', and '
