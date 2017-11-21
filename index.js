@@ -48,6 +48,9 @@ function viewCart() {
 
 function total() {
   // write your code here
+  if (cart.length < 1){
+    console.log()
+  }
 }
 
 function removeFromCart(item) {
