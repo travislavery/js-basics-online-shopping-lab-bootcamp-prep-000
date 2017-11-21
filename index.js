@@ -32,7 +32,7 @@ function viewCart() {
       statement = statement + nextItem
       if (countdown > 2) {
         statement = statement + ', and '
-      } else if (countdown ===2){
+      } else if (countdown === 2 && cart.length === 2){
         statement = statement + ' and '
       }else if (countdown === 1) {
         statement = statement + '.'
