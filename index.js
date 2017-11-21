@@ -24,13 +24,20 @@ function viewCart() {
   } else if (cart.length === 1) {
     var itemHere = cart[0]
     console.log(`In your cart, you have ${Object.keys(itemHere)[0]} at $${itemHere[Object.keys(itemHere)[0]]}.`)
-    
-  } else {
+  } else if (cart.length >= 2){
+    var countdown = cart.length
     var statement = "In your cart, you have "
-    for(var i = 0; i<cart.length; i++){
-      var nextItem = `${cart[i]} at $${cart[i]}`
+    for(var i in cart){
+      var nextItem = `${Object.keys(i)[0]} at $${i[Object.keys(i)[0]]}`
       statement += nextItem
-  }
+      if (countdown > 2) {
+        statement += ', and '
+      } else if (countdown ===2){
+        statement += ' and '
+      }else if (countdown === 1) {
+        statement += '.'
+      }
+    }
   }
   
 }
