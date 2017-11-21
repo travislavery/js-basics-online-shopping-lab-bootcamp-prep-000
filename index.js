@@ -48,8 +48,9 @@ function viewCart() {
 
 function total() {
   // write your code here
-  if (cart.length < 1){
-    console.log()
+  var sumTotal = 0;
+  for(var item in cart) {
+    sumTotal += cart[item][Object.keys(cart[item])[0]]
   }
 }
 
