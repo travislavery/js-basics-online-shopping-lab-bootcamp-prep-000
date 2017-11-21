@@ -27,7 +27,7 @@ function viewCart() {
   } else {
     var statement = "In your cart, you have "
     for(var i = 0; i<cart.length; i++){
-      var nextItem = `${cart[i]} at $${cart[i].item}`
+      var nextItem = `${cart[i]} at $${cart[i]}`
       statement += nextItem
   }
   }
