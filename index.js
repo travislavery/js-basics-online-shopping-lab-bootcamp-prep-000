@@ -40,7 +40,7 @@ function viewCart() {
       } else {
         continue;
       }
-    console.log(statment)
+    console.log(statement)
     }
   }
   
