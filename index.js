@@ -61,9 +61,9 @@ function removeFromCart(item) {
       delete cart[i];
       return cart;
     }
-    console.log('That item is not in your cart.')
-    return cart;
   }
+  console.log('That item is not in your cart.')
+  return cart;
 }
 
 function placeOrder(cardNumber) {
