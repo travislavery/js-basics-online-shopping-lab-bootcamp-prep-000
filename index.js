@@ -60,9 +60,9 @@ function removeFromCart(item) {
     console.log('That item is not in your cart.')
     return cart;
   } else {
-    for(item in cart) {
-      if (cart.hasOwnProperty(item)) {
-        delete cart[item];
+    for(var thing in cart) {
+      if (thing === item) {
+        delete cart[thing];
       }
     }
     return cart;
