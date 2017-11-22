@@ -56,7 +56,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  Object.values(ca)
+  if()
   for(item in cart) {
     if (cart.hasOwnProperty(item)) {
       delete cart[item];
